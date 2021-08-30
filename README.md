@@ -1,3 +1,4 @@
+
 # codeLottery
 This is real project that I've done working of freelance
 The main concept was about making a page where user given with special code full fill a form with its personal data and plays a lottery.
@@ -9,4 +10,5 @@ Project was build by using pure PHP/HTML/CSS/JavaScript/JQuery/AJAX and PHPmaile
 ![Screenshot_3](https://user-images.githubusercontent.com/26145751/131331995-3fac4c69-190b-4b1e-a293-10ff36bc1c8f.png)
 ![Screenshot_7](https://user-images.githubusercontent.com/26145751/131332611-1f54bf39-b36d-406b-8750-ac3d013a6965.png)
 ![Screenshot_6](https://user-images.githubusercontent.com/26145751/131332520-83d5865b-43b2-4882-8652-60aca535f3f2.png)
+![Screenshot_8](https://user-images.githubusercontent.com/26145751/131332702-5d72477d-ca93-41be-8b7d-c6ed9d4d30aa.png)
 
