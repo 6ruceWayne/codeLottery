@@ -1,0 +1,24 @@
+<?php
+
+include_once "Utils/db_connection.php";
+
+function initCodesBasics()
+{
+    $conn = OpenCon();
+    $conn->query('CREATE TABLE IF NOT EXISTS `generated_codes` (code_name VARCHAR(30) NOT NULL UNIQUE, used BOOLEAN DEFAULT false, full_name VARCHAR(50), email VARCHAR(40), mobile_number VARCHAR(15), mailing BOOLEAN, result VARCHAR(10) DEFAULT NULL, updated TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP)');
+
+    $conn->query('CREATE TABLE IF NOT EXISTS `netflix` (netflix_R250 VARCHAR(40) UNIQUE, sent_to_R250 VARCHAR(40), sent_in_R250 TIMESTAMP NULL DEFAULT NULL, netflix_R150 VARCHAR(40) UNIQUE, sent_to_R150 VARCHAR(40), sent_in_R150 TIMESTAMP NULL DEFAULT NULL)');
+
+    $conn->query('CREATE TABLE IF NOT EXISTS `checkers` (checkers_R500 VARCHAR(40) UNIQUE, sent_to_R500 VARCHAR(40), sent_in_R500 TIMESTAMP NULL DEFAULT NULL, checkers_R250 VARCHAR(40) UNIQUE, sent_to_R250 VARCHAR(40), sent_in_R250 TIMESTAMP NULL DEFAULT NULL)');
+
+    $conn->query('CREATE TABLE IF NOT EXISTS `sweep_south` (sweep_south_R150 VARCHAR(40) UNIQUE, sent_to_R150 VARCHAR(40), sent_in_R150 TIMESTAMP NULL DEFAULT NULL, sweep_south_R300 VARCHAR(40) UNIQUE, sent_to_R300 VARCHAR(40), sent_in_R300 TIMESTAMP NULL DEFAULT NULL)');
+
+    $conn->query('CREATE TABLE IF NOT EXISTS `ubereats` (ubereats_R100 VARCHAR(40) UNIQUE, sent_to_R100 VARCHAR(40), sent_in_R100 TIMESTAMP NULL DEFAULT NULL, ubereats_R200 VARCHAR(40) UNIQUE, sent_to_R200 VARCHAR(40), sent_in_R200 TIMESTAMP NULL DEFAULT NULL)');
+
+    $conn->query('CREATE TABLE IF NOT EXISTS `takealot` (takealot_R100 VARCHAR(40) UNIQUE, sent_to_R100 VARCHAR(40), sent_in_R100 TIMESTAMP NULL DEFAULT NULL, takealot_R250 VARCHAR(40) UNIQUE, sent_to_R250 VARCHAR(40), sent_in_R250 TIMESTAMP NULL DEFAULT NULL, takealot_R500 VARCHAR(40) UNIQUE, sent_to_R500 VARCHAR(40), sent_in_R500 TIMESTAMP NULL DEFAULT NULL)');
+
+    $conn->query('CREATE TABLE IF NOT EXISTS `cash` (cash_R500 VARCHAR(40) UNIQUE, sent_to_R500 VARCHAR(40), sent_in_R500 TIMESTAMP NULL DEFAULT NULL, cash_R1000 VARCHAR(40) UNIQUE, sent_to_R1000 VARCHAR(40), sent_in_R1000 TIMESTAMP NULL DEFAULT NULL)');
+
+    echo $conn->error;
+    $conn->close();
+}

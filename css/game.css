@@ -1,0 +1,658 @@
+.lottery {
+    background-image: url("/img/game-bg.jpg");
+    background-position: 22% 50%;
+    background-repeat: no-repeat;
+    background-color: #f3c82c;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 45px;
+    text-align: center;
+    position: relative;
+    padding-bottom: 45px;
+}
+
+.game-field {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.game-title {
+    font-family: castledown-heavy;
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 30px;
+}
+
+.email-label {
+    font-family: Castledown;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.game-sentence {
+    font-family: Castledown;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.game-grid {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.game-box {
+    width: 110px;
+    height: 110px;
+}
+
+.game-box-details {
+    margin: 14px;
+    box-shadow: 5px 5px #caa625;
+    background-color: #f9ecca;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-box-rounded {
+    border-radius: 50%;
+    box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.22);
+}
+
+.prise-logo {
+    width: 143px;
+    height: 143px;
+    border-radius: 50%;
+    box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.22);
+    margin-bottom: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.result-logo {
+    width: 79px;
+    height: 79px;
+}
+
+.revialed {
+    background-color: #393420;
+}
+
+.prize-logo {
+    width: 79px;
+    height: 79px;
+}
+
+.loose-logo {
+    background-image: url("/img/prizes/loose.png");
+    background-position: center center;
+    width: 110px;
+    height: 110px;
+}
+
+.prize-price {
+    color: #fbebc6;
+    font-family: castledown-heavy;
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.ts-cs-apply {
+    margin-top: 19px;
+    margin-left: 65%;
+    color: #5f5f5f;
+    font-family: myriadpro;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23.64px;
+}
+
+.player-choise {
+    background-color: #72ef36;
+}
+
+.disabled {
+    pointer-events: none;
+}
+
+.double-check-form {
+    position: absolute;
+    visibility: hidden;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 895px;
+    height: 267px;
+    box-shadow: 7px 7px 0 rgba(0, 0, 0, 0.22);
+    border-radius: 50px;
+    background-color: #38341f;
+    color: #fcecc7;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+}
+
+.main-question {
+    width: 806px;
+    margin-top: 32px;
+    font-family: castledown-heavy;
+    font-size: 43px;
+    font-weight: 400;
+    line-height: 50px;
+}
+
+.main-question-title {
+    width: 670px;
+    font-family: Castledown;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.choises {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    align-items: center;
+}
+
+.choise {
+    width: 369px;
+    height: 90px;
+    margin-left: 21px;
+    margin-right: 21px;
+    border-radius: 20px;
+    background-color: #fcecc7;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.choise:hover {
+    background-color: #72ef36;
+}
+
+.choise-text {
+    color: #38341f;
+    font-family: castledown-heavy;
+    font-size: 63px;
+    font-weight: 400;
+    line-height: 0px;
+    text-transform: uppercase;
+}
+
+.result-form {
+    position: relative;
+    height: 758px;
+    justify-content: space-around;
+}
+
+.win-field {
+    padding-bottom: 35px;
+}
+
+.result-form>.company-logo {
+    margin-top: 0px;
+}
+
+.highlight-result {
+    font-family: castledown-heavy;
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 55px;
+}
+
+.result-desc {
+    font-family: Castledown;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.fail-wrapper {
+    margin-top: -50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 120px;
+}
+
+.fail-wrapper>.highlight-result {
+    margin-bottom: 35px;
+}
+
+.congrats-desc {
+    margin-top: 33px;
+}
+
+.result-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 27px;
+}
+
+.congrats-button {
+    padding: 25px;
+    border-radius: 30px;
+    background-color: #38341f;
+    color: #fbebc6;
+    text-decoration: none;
+    font-family: castledown-heavy;
+    font-size: 34px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-right: 12px;
+    margin-left: 12px;
+    vertical-align: middle;
+}
+
+.share-button {
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.share-icon {
+    width: 49px;
+    height: 43px;
+}
+
+.failed-button {
+    width: 307px;
+    padding: 25px;
+    border-radius: 30px;
+    background-color: #38341f;
+    color: #fbebc6;
+    text-decoration: none;
+    font-family: castledown-heavy;
+    font-size: 34px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-right: 12px;
+    margin-left: 12px;
+    vertical-align: middle;
+}
+
+.share-to-block {
+    position: absolute;
+    width: 625px;
+    height: 256px;
+    box-shadow: 0 7px 0 rgba(0, 0, 0, 0.18);
+    border-radius: 20px;
+    background-color: #38341f;
+    text-align: center;
+    top: 37%;
+}
+
+.close-share-to {
+    margin-left: 14px;
+    margin-top: 12px;
+}
+
+.share-to-text {
+    color: #f8e8bb;
+    font-family: castledown-heavy;
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.share-to-icons {
+    margin-top: 27px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 103px;
+    padding-right: 103px;
+}
+
+.share-to-pic {
+    width: 98px;
+    height: 98px;
+}
+
+@media screen and (max-width: 1350px) {
+    .double-check-form {
+        top: 60%;
+    }
+    .result-form {
+        height: 775px;
+    }
+    .highlight-result {
+        width: 85%;
+    }
+    .result-desc {
+        margin-top: 20px;
+    }
+    .share-to-block {
+        top: 34%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .double-check-form {
+        width: 70%;
+        padding-bottom: 27px;
+    }
+    .main-question {
+        width: 90%;
+    }
+    .main-question-title {
+        width: 75%;
+    }
+    .choises {
+        margin-top: 15px;
+    }
+    .choise {
+        width: 250px;
+        height: 50px;
+    }
+    .choise-text {
+        font-size: 37px;
+    }
+    .prise-logo {
+        margin-left: 40%;
+        margin-right: 40%;
+        width: 130px;
+        height: 130px;
+    }
+    .highlight-result {
+        font-size: 40px;
+        line-height: 45px;
+    }
+    .result-desc {
+        font-size: 27px;
+    }
+    .congrats-button {
+        font-size: 27px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .share-to-block {
+        top: 32%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .congrats-button {
+        padding: 22px;
+    }
+    .share-icon {
+        width: 30px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .choise {
+        width: 200px;
+    }
+    .congrats-button {
+        margin-right: 8px;
+        margin-left: 8px;
+        height: 50px;
+    }
+    .failed-button {
+        margin-top: 10px;
+        width: 30%;
+        line-height: 30px;
+        padding: 10px;
+    }
+    .share-to-block {
+        top: 29%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .lottery {
+        padding-top: 5px;
+        height: 800px;
+    }
+    .company-logo-wrapper {
+        width: 90%;
+    }
+    .double-check-form {
+        height: auto;
+    }
+    .choise {
+        width: 150px;
+    }
+    .highlight-result {
+        font-size: 35px;
+        line-height: 37px;
+    }
+    .result-desc {
+        font-size: 22px;
+    }
+    .congrats-button {
+        margin-right: 6px;
+        margin-left: 6px;
+    }
+    .share-to-block {
+        width: 500px;
+        top: 26%;
+    }
+    .share-to-icons {
+        padding-left: 65px;
+        padding-right: 65px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .double-check-form {
+        width: 90%;
+        top: 55%;
+    }
+    .game-title {
+        margin-top: 10px;
+    }
+    .game-grid {
+        margin-top: 35px;
+    }
+    .game-box {
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+    }
+    .prize-logo {
+        width: 70px;
+        height: 70px;
+    }
+    .prise-logo {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 15px;
+    }
+    .result-logo {
+        width: 50px;
+        height: 50px;
+    }
+    .loose-logo {
+        background-size: 100px 100px;
+    }
+    .result-buttons {
+        flex-direction: column;
+    }
+    .congrats-button {
+        margin-top: 10px;
+        padding: 13px;
+        font-size: 17px;
+        height: auto;
+    }
+    .failed-button {
+        width: auto;
+    }
+    .share-to-block {
+        width: 400px;
+        top: 24%;
+    }
+    .share-to-icons {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .lottery {
+        padding-bottom: 45px;
+    }
+    .lottery>.company-logo {
+        width: 95%;
+    }
+    .company-logo-wrapper {
+        width: 95%;
+    }
+    .game-sentence {
+        width: 350px;
+    }
+    .main-question {
+        font-size: 40px;
+    }
+    .main-question-title {
+        font-size: 30px;
+    }
+    .choise {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .choise-text {
+        font-size: 32px;
+    }
+    .result-form {
+        height: 725px;
+    }
+    .prise-logo {
+        width: 90px;
+        height: 90px;
+    }
+    .result-logo {
+        width: 45px;
+        height: 45px;
+    }
+    .result-price {
+        font-size: 19px;
+    }
+    .highlight-result {
+        font-size: 25px;
+    }
+    .fail-wrapper>.highlight-result {
+        font-size: 35px;
+    }
+    .congrats-desc {
+        font-size: 15px;
+    }
+    .result-desc {
+        font-size: 22px;
+        width: 80%;
+        margin-top: 10px;
+    }
+    .result-buttons {
+        margin-top: 15px;
+    }
+    .share-to-block {
+        width: 350px;
+        height: 216px;
+        top: 22%;
+    }
+    .share-to-pic {
+        width: 78px;
+        height: 78px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .prise-logo {
+        width: 80px;
+        height: 80px;
+    }
+    .result-logo {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .lottery {
+        height: auto;
+        padding-bottom: 75px;
+    }
+    .game-sentence {
+        width: 300px;
+    }
+    .game-box {
+        width: 80px;
+        height: 80px;
+        margin: 6px;
+    }
+    .prize-logo {
+        width: 50px;
+        height: 50px;
+    }
+    .loose-logo {
+        background-size: 80px 80px;
+    }
+    .double-check-form {
+        top: 63%;
+    }
+    .main-question {
+        font-size: 30px;
+    }
+    .main-question-title {
+        font-size: 20px;
+    }
+    .choise {
+        width: 115px;
+        margin-left: 7px;
+        margin-right: 7px;
+    }
+    .choise-text {
+        font-size: 27px;
+    }
+    .prise-logo {
+        margin-bottom: 5px;
+    }
+    .result-logo {
+        width: 27px;
+        height: 27px;
+    }
+    .result-price {
+        font-size: 14px;
+    }
+    .fail-wrapper>.highlight-result {
+        margin-bottom: 0px;
+    }
+    .share-to-block {
+        width: 300px;
+    }
+    .share-to-text {
+        margin-top: 15px;
+    }
+    .share-to-icons {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+    .share-to-pic {
+        width: 58px;
+        height: 58px;
+    }
+}

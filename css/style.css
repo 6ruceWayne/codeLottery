@@ -1,0 +1,52 @@
+@import "player-confirmation.css";
+@import "game.css";
+@font-face {
+    font-family: castledown;
+    src: url(../fonts/castledown_regular.otf) format("opentype");
+}
+
+@font-face {
+    font-family: castledown;
+    font-weight: bold;
+    src: url(../fonts/castledown_bold.otf) format("opentype");
+}
+
+@font-face {
+    font-family: castledown-heavy;
+    font-weight: heavy;
+    src: url(../fonts/castledown_heavy.otf) format("opentype");
+}
+
+@font-face {
+    font-family: myriadpro;
+    src: url(../fonts/myriadpro-regular.otf) format("opentype");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: castledown;
+}
+
+.hiddenElement {
+    visibility: hidden;
+}
+
+.visibleElement {
+    visibility: visible;
+}
+
+.display-none {
+    display: none;
+}
