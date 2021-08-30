@@ -7,5 +7,6 @@ Project was build by using pure PHP/HTML/CSS/JavaScript/JQuery/AJAX and PHPmaile
 
 ![Screenshot_2](https://user-images.githubusercontent.com/26145751/131331935-37388880-786e-4bca-b4f4-a711ea377af3.png)
 ![Screenshot_3](https://user-images.githubusercontent.com/26145751/131331995-3fac4c69-190b-4b1e-a293-10ff36bc1c8f.png)
-![Screenshot_5](https://user-images.githubusercontent.com/26145751/131332418-9d69db8f-f6e4-4772-8aae-0d8d70383b7c.png)
+![Screenshot_6](https://user-images.githubusercontent.com/26145751/131332520-83d5865b-43b2-4882-8652-60aca535f3f2.png)
+
 
